@@ -3,17 +3,17 @@
   <default sync-j="2" />
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="https://github.com/S5P6818" name="rockchip"/>
+  <remote fetch="https://github.com/S5P6818" name="s5p6818"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="git://github.com/koenkooi"  name="KODI"/>
     
-  <project remote="rockchip" revision="rocko" name="meta-rockchip" path="sources/meta-rockchip"/>
-  <project remote="rockchip" revision="rocko" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
+  <project remote="s5p6818" revision="rocko" name="meta-rockchip" path="sources/meta-rockchip"/>
+  <project remote="s5p6818" revision="rocko" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
  
-  <project remote="rockchip" revision="master" name="rkbin" path="rkbin"/>
-  <project remote="rockchip" revision="yocto" name="build" path="sources/base">
+  <project remote="s5p6818" revision="master" name="rkbin" path="rkbin"/>
+  <project remote="s5p6818" revision="yocto" name="build" path="sources/base">
         <copyfile dest="README" src="README"/>
         <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
